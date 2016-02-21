@@ -57,12 +57,12 @@
 <template>
   <li class="item" v-el="abc">
     <strong>{{item.rankingId}}</strong>
-    <div class="user-avatar"><img v-bind:src="item.userIconUrl" alt="{{item.userNickname}}"></div>
+    <div class="user-avatar" v-if="item.userNickname"><img v-bind:src="item.userIconUrl" alt="{{item.userNickname}}"></div>
     <div class="info">
         <h3 v-bind:class="{'roll-display': isOverflow}">
           <a href="{{item.watchUrl}}">{{item.title}}</a>
         </h3>
-      <a class="user-name" href="{{item.userUrl}}">{{item.userNickname}}</a>
+      <a class="user-name" v-if="item.userUrl" href="{{item.userUrl}}">{{item.userNickname}}</a>
     </div>
   </li>
 </template>
