@@ -29,7 +29,7 @@ module.exports = {
   },
   vue: {
     loaders: {
-      css: process.env.NODE_ENV === 'production' ? extractCSS.extract('style', 'css') : ''
+      css: process.env.NODE_ENV === 'production' ? extractCSS.extract('style', 'css') : 'style!css'
     },
     autoprefixer: {
       browsers: ['> 5%','last 2 versions']

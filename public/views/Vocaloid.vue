@@ -10,7 +10,7 @@
     <section class="item-list">
       <h4 class="loading" v-if="loading">{{ msg }}</h4>
       <ul v-if="!loading">
-        <template v-for="item in vocaloidData" track-by="rankingId">
+        <template v-for="item in vocaloidData | orderBy 'rankingId'">
           <Item :item="item" transition="item"></Item>
         </template>
       </ul>
