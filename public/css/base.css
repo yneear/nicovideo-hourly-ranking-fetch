@@ -5,6 +5,9 @@ body {
 a {
   text-decoration: none;
 }
+a:hover {
+  cursor:pointer;
+}
 ul, li {
   list-style: none;
   -webkit-padding-start: 0;

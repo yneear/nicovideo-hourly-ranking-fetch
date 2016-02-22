@@ -37,7 +37,6 @@
     "superagent": "1.7.2",
     "async": "1.5.2",
     "vue": "^1.0.0",
-    "vue-router": "^0.7.5",
     "vue-resource": "*"
   },
   "devDependencies": {

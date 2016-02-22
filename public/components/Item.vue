@@ -53,14 +53,13 @@
 .item-transition {
   transition: all .6s cubic-bezier(0.25, 0.1, 0, 1.56);
 }
-
-.item-enter {
+.item-enter, .item-leave {
   transform: scale(0);
 }
 </style>
 
 <template>
-  <li class="item" v-el="abc">
+  <li class="item">
     <strong>{{item.rankingId}}</strong>
     <div class="user-avatar" v-if="item.userNickname"><img v-bind:src="item.userIconUrl" alt="{{item.userNickname}}"></div>
     <div class="info">

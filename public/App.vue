@@ -1,6 +1,16 @@
 <template>
-  <div>
-      <router-view keep-alive transition>
-      </router-view>
+  <div id="app">
+    <layout></layout>
   </div>
 </template>
+
+<script>
+import Layout from './components/Layout.vue'
+
+export default {
+  components: {
+    Layout
+  }
+}
+</script>
+
