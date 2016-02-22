@@ -27,6 +27,11 @@
   color: #006699;
   transition: all 3s linear;
 }
+.info time {
+  position: absolute;
+  right: 10px;
+  color: #cdebff;
+}
 .roll-display a:hover {
   position: relative;
   z-index: 1;
@@ -63,6 +68,7 @@
           <a href="{{item.watchUrl}}">{{item.title}}</a>
         </h3>
       <a class="user-name" v-if="item.userUrl" href="{{item.userUrl}}">{{item.userNickname}}</a>
+      <time>{{item.upTime}}</time>
     </div>
   </li>
 </template>

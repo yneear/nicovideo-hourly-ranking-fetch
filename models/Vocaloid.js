@@ -9,7 +9,8 @@ var VocaloidSchema = new Schema({
   watchUrl: String,
   thumbnailUrl: String,
   created_at: { type: Date, default: Date.now  },
-  rankingId: Number
+  rankingId: Number,
+  upTime: String
 });
 
 VocaloidSchema.index({rankingId: 1});
