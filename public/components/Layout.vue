@@ -5,6 +5,7 @@
       <ul class="category">
         <li><a @click="fetchData('Vocaloid')">Vocaloid</a></li>
         <li><a @click="fetchData('Singer')">Singer</a></li>
+        <li><a @click="fetchData('Player')">Player</a></li>
       </ul>
     </header>
     <section class="item-list">

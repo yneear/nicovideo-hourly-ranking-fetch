@@ -9,3 +9,4 @@ mongoose.connect('mongodb://127.0.0.1:27017/nicoranking' ,function (err) {
 
 exports.Vocaloid = require('./Vocaloid');
 exports.Singer = require('./Singer');
+exports.Player = require('./Player');
