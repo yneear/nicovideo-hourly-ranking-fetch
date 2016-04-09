@@ -1,2 +1,2 @@
 ##nicovideo-hourly-ranking-fetch
-toy
+toy (using MongoDB with the Koa and the Vue)           
