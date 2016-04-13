@@ -56,13 +56,17 @@
 .item-enter, .item-leave {
   transform: scale(0);
 }
+
+.no-user {
+  margin-bottom: 10px;
+}
 </style>
 
 <template>
   <li class="item">
     <strong>{{item.rankingId}}</strong>
     <div class="user-avatar" v-if="item.userNickname"><img v-bind:src="item.userIconUrl" alt="{{item.userNickname}}"></div>
-    <div class="info">
+    <div class="info" v-bind:class="{'no-user': !item.userUrl}">
         <h3 v-bind:class="{'roll-display': isOverflow}">
           <a href="{{item.watchUrl}}">{{item.title}}</a>
         </h3>
